@@ -6,7 +6,7 @@
 #    By: cde-laro <cde-laro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/05/01 23:16:20 by cde-laro          #+#    #+#              #
-#    Updated: 2017/05/05 06:15:16 by cde-laro         ###   ########.fr        #
+#    Updated: 2017/05/05 09:32:19 by cde-laro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,6 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 	@make fclean -C $(LIB_DIR)
-	@make fclean -C $(MLX_DIR)
 	@echo "$(COLOR)$(NAME)\t\t\t\0033[0;31m[Deleted]\0033[0;37m"
 
 re: fclean all
